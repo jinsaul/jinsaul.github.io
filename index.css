@@ -18,15 +18,19 @@
   background-color: var(--dl-color-gray-white);
 }
 .home-navbar {
-  top: 0px;
-  left: 0px;
+  top: 1px;
+  left: 1px;
   width: 100%;
   display: flex;
-  position: absolute;
-  max-width: var(--dl-size-size-maxcontent);
+  z-index: 100;
+  position: sticky;
+  max-width: 100%;
+  align-self: center;
   align-items: center;
   padding-top: var(--dl-space-space-tripleunit);
+
   padding-left: var(--dl-space-space-tripleunit);
+  border-radius: var(--dl-radius-radius-radius4);
   padding-right: var(--dl-space-space-tripleunit);
   flex-direction: row;
   padding-bottom: var(--dl-space-space-tripleunit);
