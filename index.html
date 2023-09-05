@@ -1,7 +1,326 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+  <head>
+    <title>Portfolio Page</title>
+    <meta property="og:title" content="Portfolio Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Arial;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div data-role="Header" class="home-navbar-container">
+          <div class="home-navbar">
+            <span class="home-heading Card-Heading">Jinsaul Kim</span>
+            <a href="mailto:jinsaulkim@gmail.com?subject=" class="home-link">
+              jinsaulkim@gmail.com
+            </a>
+            <div class="home-social-links">
+              <a
+                href="https://instagram.com/jinsaul"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link01"
+              >
+                <svg viewBox="0 0 877.7142857142857 1024" class="home-icon">
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://github.com/jinsaul"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link02"
+              >
+                <svg viewBox="0 0 1024 1024" class="home-icon02">
+                  <path
+                    d="M512.008 12.642c-282.738 0-512.008 229.218-512.008 511.998 0 226.214 146.704 418.132 350.136 485.836 25.586 4.738 34.992-11.11 34.992-24.632 0-12.204-0.48-52.542-0.696-95.324-142.448 30.976-172.504-60.41-172.504-60.41-23.282-59.176-56.848-74.916-56.848-74.916-46.452-31.778 3.51-31.124 3.51-31.124 51.4 3.61 78.476 52.766 78.476 52.766 45.672 78.27 119.776 55.64 149.004 42.558 4.588-33.086 17.852-55.68 32.506-68.464-113.73-12.942-233.276-56.85-233.276-253.032 0-55.898 20.004-101.574 52.76-137.428-5.316-12.9-22.854-64.972 4.952-135.5 0 0 43.006-13.752 140.84 52.49 40.836-11.348 84.636-17.036 128.154-17.234 43.502 0.198 87.336 5.886 128.256 17.234 97.734-66.244 140.656-52.49 140.656-52.49 27.872 70.528 10.35 122.6 5.036 135.5 32.82 35.856 52.694 81.532 52.694 137.428 0 196.654-119.778 239.95-233.79 252.624 18.364 15.89 34.724 47.046 34.724 94.812 0 68.508-0.596 123.644-0.596 140.508 0 13.628 9.222 29.594 35.172 24.566 203.322-67.776 349.842-259.626 349.842-485.768 0-282.78-229.234-511.998-511.992-511.998z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jinsaulkim000/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link03"
+              >
+                <svg viewBox="0 0 877.7142857142857 1024" class="home-icon04">
+                  <path
+                    d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="home-links-container">
+              <a href="#About" class="home-link04 Navbar-Link">About</a>
+              <a href="#Projects" class="home-link05 Navbar-Link">Projects</a>
+              <a href="#Skills" class="home-link06 Navbar-Link">Skills</a>
+            </div>
+            <div data-role="BurgerMenu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon06">
+                <path
+                  d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+                ></path>
+              </svg>
+            </div>
+            <div data-role="MobileMenu" class="home-mobile-menu">
+              <div class="home-container1">
+                <span class="Card-Heading home-heading1">Logo</span>
+                <div data-role="CloseMobileMenu" class="home-close-menu">
+                  <svg viewBox="0 0 1024 1024" class="home-icon08">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="home-links-container1">
+                <span class="home-link07 Navbar-Link">About</span>
+                <span class="home-link08 Navbar-Link">Experience</span>
+                <span class="home-link09 Navbar-Link">Portofolio</span>
+                <span class="Navbar-Link">Contact</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-section-separator"></div>
+        <div class="home-section-separator1"></div>
+        <div id="About" class="home-container2">
+          <div class="home-hero">
+            <div class="home-hero-text-container">
+              <h1 class="home-heading2">
+                <span>Budding Software Developer</span>
+                <br />
+              </h1>
+              <span class="home-text02 Section-Text">
+                Currently a student at Imperial College London, studying
+                Computing
+              </span>
+              <div class="home-cta-btn-container">
+                <a
+                  href="https://jinsaul.github.io/resume.pdf"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-cta-btn Anchor button"
+                >
+                  <span class="home-text03">My resume</span>
+                </a>
+              </div>
+            </div>
+            <img
+              alt="jinsaulphoto"
+              src="https://jinsaul.github.io/jinsaulphoto.jpg"
+              loading="eager"
+              class="home-image"
+            />
+          </div>
+        </div>
+        <div id="Projects" class="home-features">
+          <div class="home-heading-container">
+            <h2 class="home-text04 Section-Heading">Projects</h2>
+          </div>
+          <div class="home-cards-container">
+            <div class="home-card">
+              <div class="home-content-container">
+                <span class="home-heading3 Card-Heading">
+                  Workout scheduler
+                </span>
+                <span class="home-text05">
+                  I wrote a Windows program that shows you your workout progress
+                  and advises you on what to do next. I wrote the GUI using
+                  Win32 and C++.
+                </span>
+              </div>
+            </div>
+            <div class="home-card1">
+              <div class="home-content-container1">
+                <span class="home-heading4 Card-Heading">ARM11 emulator</span>
+                <span class="home-text06">
+                  <span>
+                    As part of a group, I wrote an emulator for the ARM86
+                    processor in C. The emulator would take a binary instruction
+                    file and output the state that an ARM86 processor would be
+                    in after executing the instructions.
+                  </span>
+                  <br />
+                </span>
+              </div>
+            </div>
+            <div class="home-card2">
+              <div class="home-content-container2">
+                <span class="home-heading5 Card-Heading">
+                  pintOS operating system
+                </span>
+                <span class="home-text09">
+                  As part of a group, I wrote features for a small and basic
+                  operating system in C. These features include threading, user
+                  programs, and virtual memory. The OS could execute user made
+                  programs and output its results in a console.
+                </span>
+              </div>
+            </div>
+            <div class="home-card3">
+              <div class="home-content-container3">
+                <span class="home-heading6 Card-Heading">WACC compiler</span>
+                <span class="home-text10">
+                  As part of a group, I wrote a complete compiler for the WACC
+                  language. The compiler would take a program written in WACC
+                  and output its resulting assembly instructions.
+                </span>
+              </div>
+            </div>
+            <div class="home-card4">
+              <div class="home-content-container4">
+                <a
+                  href="https://play.unity.com/mg/other/webgl-builds-340213"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-heading7"
+                >
+                  <span class="Card-Heading">Waste Warriors website</span>
+                  <br />
+                  <span class="home-text13">(click to open website)</span>
+                  <br />
+                </a>
+                <span class="home-text15">
+                  As part of a group, I created a website using React that
+                  allows users to plan community litter picking events. Users
+                  can create events and add information about the event or sign
+                  up to events that others create.&nbsp;
+                </span>
+              </div>
+            </div>
+            <div class="home-container3">
+              <a
+                href="https://play.unity.com/mg/other/webgl-builds-340213"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link11"
+              >
+                <img
+                  src="https://jinsaul.github.io/asbbimage"
+                  alt="asbbimage"
+                  loading="eager"
+                  class="home-image1"
+                />
+              </a>
+              <div class="home-card5">
+                <div class="home-content-container5">
+                  <a
+                    href="https://play.unity.com/mg/other/webgl-builds-340213"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="home-heading8"
+                  >
+                    <span class="Card-Heading">
+                      Advanced Swipe Brick Breaker
+                    </span>
+                    <br />
+                    <span class="home-text18">(click to play game)</span>
+                    <br />
+                  </a>
+                  <span class="home-text20">
+                    I recreated Swipe Brick Breaker in Unity and added some new
+                    twists to the game, such as set number of new bricks every
+                    round, hidden numbers, hidden colours, and more.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Skills" class="home-about">
+          <div class="home-max-content-width-container">
+            <div class="home-heading-container1">
+              <h1 class="Section-Heading home-text21">Skills</h1>
+            </div>
+            <div class="home-content-container6">
+              <div class="home-about-1">
+                <div class="home-container4">
+                  <svg viewBox="0 0 1024 1024" class="home-icon10">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text22">
+                    Programming Languages: C, C++, C#, Java, Scala, JavaScript,
+                    Haskell
+                  </span>
+                </div>
+                <div class="home-container5">
+                  <svg viewBox="0 0 1024 1024" class="home-icon12">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text23">
+                    <span>Spoken Languages: English, Korean, Japanese</span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+              <div class="home-about-11">
+                <div class="home-container6">
+                  <svg viewBox="0 0 1024 1024" class="home-icon14">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text26">
+                    Interests besides software: Squash, Badminton, Muay Thai,
+                    Taekwondo, Snowboarding, Surfing, Video Games&nbsp;
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-section-separator2"></div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
 </html>
