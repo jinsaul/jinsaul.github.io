@@ -28,10 +28,6 @@
   --dl-space-space-doubleunit: 16px;
   --dl-space-space-tripleunit: 24px;
 }
-.teleport-show {
-  display: flex !important;
-  transform: none !important;
-}
 .list {
   width: 100%;
   margin: 1em 0px 1em 0px;
